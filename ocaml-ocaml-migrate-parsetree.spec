@@ -43,7 +43,7 @@ używających biblioteki migrate-parsetree.
 
 %package devel
 Summary:	Convert OCaml parsetrees between different major versions - development part
-Summary(pl.UTF-8):	Konwersja drzew analizy OCamla między głównymi wersjami - cześć programistyczna
+Summary(pl.UTF-8):	Konwersja drzew analizy OCamla między głównymi wersjami - część programistyczna
 Group:		Development/Libraries
 Requires:	%{name} = %{version}-%{release}
 %requires_eq	ocaml
