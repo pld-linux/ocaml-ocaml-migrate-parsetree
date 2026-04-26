@@ -11,16 +11,15 @@ Summary:	Convert OCaml parsetrees between different major versions
 Summary(pl.UTF-8):	Konwersja drzew analizy OCamla między głównymi wersjami
 # "ocaml-" prefix + "ocaml-migrate-parsetree" library name
 Name:		ocaml-ocaml-migrate-parsetree
-Version:	2.2.0
+Version:	2.4.0
 Release:	1
 License:	LGPL v2.1 with linking exception
 Group:		Libraries
 #Source0Download: https://github.com/ocaml-ppx/ocaml-migrate-parsetree/releases
-Source0:	https://github.com/ocaml-ppx/ocaml-migrate-parsetree/releases/download/v%{version}/ocaml-migrate-parsetree-v%{version}.tbz
-# Source0-md5:	1d2699aab74fcd46b71178b4f3ccbcb5
+Source0:	https://github.com/ocaml-ppx/ocaml-migrate-parsetree/releases/download/%{version}/ocaml-migrate-parsetree-%{version}.tbz
+# Source0-md5:	bc7cfa22a585bcc2edd50a58eb7514f9
 URL:		https://github.com/ocaml-ppx/ocaml-migrate-parsetree
 BuildRequires:	ocaml >= 1:4.02.3
-BuildRequires:	ocaml < 1:4.14
 BuildRequires:	ocaml-dune >= 2.3
 %requires_eq	ocaml-runtime
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -57,7 +56,7 @@ Pakiet ten zawiera pliki niezbędne do tworzenia programów używających
 biblioteki migrate-parsetree.
 
 %prep
-%setup -q -n ocaml-migrate-parsetree-v%{version}
+%setup -q -n ocaml-migrate-parsetree-%{version}
 
 %build
 dune build --verbose
